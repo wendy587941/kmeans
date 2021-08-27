@@ -36,7 +36,7 @@ cursor.execute(sql)
 results = cursor.fetchall()
 
 # 將查詢結果存入 MySQL
-sql_insert = """ insert into userid_history values (%s, %s, %s, %s, %s); """
+sql_insert = """ insert into user_id_history values (%s, %s, %s, %s, %s); """
 rating = sum(i for i in questionnaire)/4
 values = [(user_id,) + (rating,) + t for t in results]
 cursor.executemany(sql_insert, values)
