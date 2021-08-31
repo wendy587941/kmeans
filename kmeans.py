@@ -5,10 +5,10 @@ import pymysql
 
 # 連線 MySQL
 connInfo={
-    'host': '54.65.74.214',
-    'port': 3306,
-    'user': 'root',
-    'passwd': 'password',
+    'host': '',
+    'port': ,
+    'user': '',
+    'passwd': '',
     'db': 'demo',
     'charset': 'utf8mb4'
 }
